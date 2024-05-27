@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="options-content">
+        <h1>Settings</h1>
+        <label for="api-token">OpenAI API Token:</label>
+        <input type="text" id="api-token" class="input">
+        <label for="model">Model:</label>
+        <select id="model" class="select">
+            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+            <option value="gpt-4">GPT-4</option>
+            <option value="gpt-4o">GPT-4o</option>
+        </select>
+        <label for="prompt">Initial Prompt:</label>
+        <textarea id="prompt" class="textarea"></textarea>
+        <button id="save-settings" class="button">Save Settings</button>
+    </div>
+    <script src="scripts/options.js"></script>
+</body>
+
+</html>
